@@ -1,5 +1,5 @@
-param webAppName string // = uniqueString(resourceGroup().id)
-param sku string = 'F1' // Changed from S1 to F1 (Free tier)
+param webAppName string
+param sku string = 'F1' // Free tier instead of S1
 param location string = resourceGroup().location
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
